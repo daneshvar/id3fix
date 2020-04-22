@@ -48,7 +48,6 @@ def printRating(files):
                         b = True
                     print(key + ":", value)
         elif ext == ".flac":
-            print(fileName)
             try:
                 tags = mutagen.flac.FLAC(fileName)
             except Exception as err:
